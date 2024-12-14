@@ -1,0 +1,168 @@
+{
+    "fourPuzzleSchema": {
+        "schemas": [
+            [
+                {
+                    "name": "puzzle1",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 3.7,
+                        "y": 4.44
+                    },
+                    "width": 100.54,
+                    "height": 93.27,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle2",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 110.8,
+                        "y": 4.44
+                    },
+                    "width": 100.54,
+                    "height": 93.27,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle3",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 3.7,
+                        "y": 126.83
+                    },
+                    "width": 100.54,
+                    "height": 93.27,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle4",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 110.8,
+                        "y": 126.83
+                    },
+                    "width": 100.54,
+                    "height": 93.27,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                }
+            ]
+        ],
+        "basePdf": "data:application/pdf;base64,JVBERi0xLjcKCjQgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMTYKPj4Kc3RyZWFtCnicjY6xDYAwDAR7T8ECWO+Ak3gMZkACCihg/4JIgEKAAlfvs/Q+cFCkqcBAGWq8bsHcFfuFVpJre4dtpKZl9SlLLlgoRGEXAWeZzncqUJ8PuaPkEw3U/TEI7stAxMz0aXDS9Ek5NmbeHwZnR8kPgx1Xdz2+CmVuZHN0cmVhbQplbmRvYmoKNSAwIG9iago8PAo+PgplbmRvYmoKMyAwIG9iago8PAovQ29udGVudHMgWyA0IDAgUiBdCi9Dcm9wQm94IFsgMC4wIDAuMCA2MTIuMCA3OTIuMCBdCi9NZWRpYUJveCBbIDAuMCAwLjAgNjEyLjAgNzkyLjAgXQovUGFyZW50IDIgMCBSCi9SZXNvdXJjZXMgNSAwIFIKL1JvdGF0ZSAwCi9UeXBlIC9QYWdlCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9Db3VudCAxCi9LaWRzIFsgMyAwIFIgXQovVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1BhZ2VzIDIgMCBSCi9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9BdXRob3IgKFZsYWQgQm9yaXNlbmtvKQovQ3JlYXRpb25EYXRlIChEOjIwMjQxMjE0MTYwMDI0KzAyJzAwJykKL01vZERhdGUgKEQ6MjAyNDEyMTQxNjAwMjQrMDInMDAnKQovUHJvZHVjZXIgKE1pY3Jvc29mdDogUHJpbnQgVG8gUERGKQovVGl0bGUgKDliYTI1NWZhLTU1ZWItNDRmMC1hNDY0LThjOWYzY2Y2MzIyOSkKPj4KZW5kb2JqCnhyZWYKMCA3DQowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDA0MzggMDAwMDAgbg0KMDAwMDAwMDM3OSAwMDAwMCBuDQowMDAwMDAwMjE4IDAwMDAwIG4NCjAwMDAwMDAwMDkgMDAwMDAgbg0KMDAwMDAwMDE5NyAwMDAwMCBuDQowMDAwMDAwNDg3IDAwMDAwIG4NCnRyYWlsZXIKPDwKL0luZm8gNiAwIFIKL1Jvb3QgMSAwIFIKL1NpemUgNwo+PgpzdGFydHhyZWYKNjkxCiUlRU9GCg==",
+        "pdfmeVersion": "5.2.6"
+    },
+    "sixPuzzleSchema": {
+        "schemas": [
+            [
+                {
+                    "name": "puzzle1",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 4.76,
+                        "y": 4.97
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle3",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 4.76,
+                        "y": 97.79
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle5",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 4.76,
+                        "y": 188.75
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle1 copy 3",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 110.54,
+                        "y": 4.97
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle4",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 110.54,
+                        "y": 97.79
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                },
+                {
+                    "name": "puzzle6",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 110.54,
+                        "y": 188.75
+                    },
+                    "width": 94.45,
+                    "height": 87.71,
+                    "rotate": 0,
+                    "readOnly": true,
+                    "opacity": 1,
+                    "required": true
+                }
+            ]
+        ],
+        "basePdf": "data:application/pdf;base64,JVBERi0xLjcKCjQgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMTYKPj4Kc3RyZWFtCnicjY6xDYAwDAR7T8ECWO+Ak3gMZkACCihg/4JIgEKAAlfvs/Q+cFCkqcBAGWq8bsHcFfuFVpJre4dtpKZl9SlLLlgoRGEXAWeZzncqUJ8PuaPkEw3U/TEI7stAxMz0aXDS9Ek5NmbeHwZnR8kPgx1Xdz2+CmVuZHN0cmVhbQplbmRvYmoKNSAwIG9iago8PAo+PgplbmRvYmoKMyAwIG9iago8PAovQ29udGVudHMgWyA0IDAgUiBdCi9Dcm9wQm94IFsgMC4wIDAuMCA2MTIuMCA3OTIuMCBdCi9NZWRpYUJveCBbIDAuMCAwLjAgNjEyLjAgNzkyLjAgXQovUGFyZW50IDIgMCBSCi9SZXNvdXJjZXMgNSAwIFIKL1JvdGF0ZSAwCi9UeXBlIC9QYWdlCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9Db3VudCAxCi9LaWRzIFsgMyAwIFIgXQovVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1BhZ2VzIDIgMCBSCi9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9BdXRob3IgKFZsYWQgQm9yaXNlbmtvKQovQ3JlYXRpb25EYXRlIChEOjIwMjQxMjE0MTYwMDI0KzAyJzAwJykKL01vZERhdGUgKEQ6MjAyNDEyMTQxNjAwMjQrMDInMDAnKQovUHJvZHVjZXIgKE1pY3Jvc29mdDogUHJpbnQgVG8gUERGKQovVGl0bGUgKDliYTI1NWZhLTU1ZWItNDRmMC1hNDY0LThjOWYzY2Y2MzIyOSkKPj4KZW5kb2JqCnhyZWYKMCA3DQowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDA0MzggMDAwMDAgbg0KMDAwMDAwMDM3OSAwMDAwMCBuDQowMDAwMDAwMjE4IDAwMDAwIG4NCjAwMDAwMDAwMDkgMDAwMDAgbg0KMDAwMDAwMDE5NyAwMDAwMCBuDQowMDAwMDAwNDg3IDAwMDAwIG4NCnRyYWlsZXIKPDwKL0luZm8gNiAwIFIKL1Jvb3QgMSAwIFIKL1NpemUgNwo+PgpzdGFydHhyZWYKNjkxCiUlRU9GCg==",
+        "pdfmeVersion": "5.2.6"
+    }
+}

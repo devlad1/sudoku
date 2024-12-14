@@ -1,0 +1,23 @@
+{
+  "name": "sudoku",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "@pdfme/common": "^5.2.10",
+    "@pdfme/generator": "^5.2.10",
+    "@pdfme/schemas": "^5.2.11",
+    "@pdfme/ui": "^5.2.10",
+    "pdf-lib": "^1.17.1",
+    "sudoku-gen": "^1.0.2"
+  }
+}
