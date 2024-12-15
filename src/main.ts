@@ -81,10 +81,9 @@ async function generatePdf(): Promise<void> {
       console.log(progress)
       PROGRESS_ELEMENT.style.width = `${100 * progress}%`
     })
-    const mergedPdf = await sudokuMaker.make(config, progressSubject)
 
-    const mergedPdfBytes = await mergedPdf.save();
-    const mergedPdfBlob = new Blob([mergedPdfBytes], { type: 'application/pdf' });
+    const pdfBytes = await sudokuMaker.make(config, progressSubject)
+    const mergedPdfBlob = new Blob([pdfBytes], { type: 'application/pdf' });
     window.open(URL.createObjectURL(mergedPdfBlob));
   }
 }

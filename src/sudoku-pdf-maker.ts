@@ -41,7 +41,7 @@ export class SudokuPDFMaker {
         }
     }
 
-    async make(config: Settings, progressSubject$: Subject<number>): Promise<PDFDocument> {
+    async make(config: Settings, progressSubject$: Subject<number>): Promise<Uint8Array> {
         const pdfDataArray: Promise<Uint8Array>[] = new Array(config.numPages)
         for (let i = 0; i < config.numPages; i++) {
           let puzzleSchemas = this.template.schemas[0]
@@ -63,6 +63,6 @@ export class SudokuPDFMaker {
           });
         }
 
-        return mergedPdf
+        return mergedPdf.save()
     }
 }
