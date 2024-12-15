@@ -1,5 +1,3 @@
-import './style.css'
-
 import { Difficulty } from 'sudoku-gen/dist/types/difficulty.type';
 
 import { PageMode } from './types';
