@@ -1,8 +1,8 @@
 import { Difficulty } from "sudoku-gen/dist/types/difficulty.type";
-import { NumberOfSudokus } from "./types";
+import { PageMode } from "./types";
 
 export class Settings {
     difficulty: Difficulty = 'medium';
-    numberOfSudokus: NumberOfSudokus = '6';
+    pageMode: PageMode = '6';
     numPages: number = 1;
 }

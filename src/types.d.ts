@@ -1,1 +1,1 @@
-export declare type NumberOfSudokus = '4' | '6';
+export declare type PageMode = '4' | '6';

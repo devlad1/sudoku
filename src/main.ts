@@ -2,7 +2,7 @@ import './style.css'
 
 import { Difficulty } from 'sudoku-gen/dist/types/difficulty.type';
 
-import { NumberOfSudokus } from './types';
+import { PageMode } from './types';
 import { Settings } from './settings';
 import { SudokuPDFMaker } from './sudoku-pdf-maker';
 import { Subject } from 'rxjs';
@@ -11,7 +11,7 @@ const ERROR_ELEMENT = document.getElementById("errorMessage") as HTMLParagraphEl
 const PROGRESS_ELEMENT = document.getElementById("progress-bar") as HTMLDivElement;
 
 const config = new Settings();
-const sudokuMaker = new SudokuPDFMaker(config.numberOfSudokus);
+const sudokuMaker = new SudokuPDFMaker(config.pageMode);
 
 document.addEventListener("DOMContentLoaded", () => {  
   const difficultyOptions: { value: Difficulty; text: string }[] = [
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   difficultyDropdown.value = config.difficulty
   
-  const numberOptions: { value: NumberOfSudokus; text: NumberOfSudokus }[] = [
+  const numberOptions: { value: PageMode; text: PageMode }[] = [
     { value: '4', text: '4' },
     { value: '6', text: '6' },
   ];
@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     numberOfSudokusDropdown.appendChild(opt);
   });
   numberOfSudokusDropdown.addEventListener('change', () => {
-    config.numberOfSudokus = numberOfSudokusDropdown.value as NumberOfSudokus
-    sudokuMaker.numberOfSudokus = config.numberOfSudokus
+    config.pageMode = numberOfSudokusDropdown.value as PageMode
+    sudokuMaker.pageMode = config.pageMode
   });
-  numberOfSudokusDropdown.value = config.numberOfSudokus
+  numberOfSudokusDropdown.value = config.pageMode
 
   function handleInputChange(event: Event): void {
     const target = event.target as HTMLInputElement;
