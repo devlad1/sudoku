@@ -25,9 +25,12 @@ a:hover {
 body {
   margin: 0;
   /* display: flex; */
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.main-thing {
+  margin: 1%;
 }
 
 h1 {
@@ -39,20 +42,6 @@ h1 {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
 }
 
 .card {
@@ -91,17 +80,4 @@ button:focus-visible {
   width: 0;
   height: 30px;
   background-color: #4caf50;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

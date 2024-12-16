@@ -6,25 +6,25 @@
     <title>Принтер судоку</title>
   </head>
   <body>
-    <div>
+    <div class="main-thing">
       <label for="difficulty">Сложность:</label>
       <select id="difficulty">
       </select>
     </div>
-    <div>
+    <div class="main-thing">
       <label for="numberOfSudokus">Судоку на странице:</label>
       <select id="numberOfSudokus">
       </select>
     </div>
-    <div>
+    <div class="main-thing">
       <label for="numberOfPages">Копичество страниц:</label>
       <input type="text" id="numberOfPages" placeholder="Максимум 50" />
     </div>
-    <button id="generate">Создать</button>
-    <p id="errorMessage"></p>
-    <div id="progress-bar-container">
+    <button class="main-thing" id="generate">Создать</button>
+    <div class="main-thing" id="progress-bar-container">
       <div id="progress-bar"></div>
     </div> 
+    <p class="main-thing" id="errorMessage"></p>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
