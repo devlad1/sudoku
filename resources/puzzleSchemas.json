@@ -75,12 +75,11 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 4.76,
-                        "y": 4.97
+                        "x": 1,
+                        "y": 1
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -90,12 +89,11 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 4.76,
-                        "y": 97.79
+                        "x": 1,
+                        "y": 94.84
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -105,27 +103,25 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 4.76,
-                        "y": 188.75
+                        "x": 1,
+                        "y": 189
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
                 },
                 {
-                    "name": "puzzle1 copy 3",
+                    "name": "puzzle2",
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 110.54,
-                        "y": 4.97
+                        "x": 124.85,
+                        "y": 1
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -135,12 +131,11 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 110.54,
-                        "y": 97.79
+                        "x": 124.85,
+                        "y": 94.84
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -150,12 +145,11 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 110.54,
-                        "y": 188.75
+                        "x": 124.85,
+                        "y": 189
                     },
-                    "width": 94.45,
-                    "height": 87.71,
-                    "rotate": 0,
+                    "width": 90,
+                    "height": 90,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true

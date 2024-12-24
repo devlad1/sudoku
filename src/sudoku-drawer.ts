@@ -6,14 +6,14 @@ const SMALL_GAP = 3
 const SQUARE_SIZE = 56
 const LARGE_GAP = 11
 const TOTAL_SIZE = (PUZZLE_CONST * SQUARE_SIZE + (PUZZLE_CONST - 1) * SMALL_GAP) * PUZZLE_CONST + (PUZZLE_CONST - 1) * LARGE_GAP + SMALL_GAP * 2
-const FONT_SIZE = 30
+const FONT_SIZE = 56
 
 const EMPTY_COLOR = "#FFFFFF"
 const USED_COLOR = "#DEDEDE"
 const BORDER_COLOR = "#808080"
 const FONT_COLOR = "#000000"
 
-const FONT = 'arial'
+const FONT = 'courier new'
 
 export function createSudokuPNG(sudoku: Sudoku): string {
     const canvas = document.createElement('canvas');
