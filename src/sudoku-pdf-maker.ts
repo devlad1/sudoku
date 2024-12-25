@@ -8,7 +8,7 @@ import { getSudoku } from "sudoku-gen";
 import { createSudokuPNG } from "./sudoku-drawer";
 import { Subject } from "rxjs";
 
-import MyWorker from './pdf-worker/worker?worker'
+import pdfWorker from './pdf-worker/worker?worker'
 
 export interface PrintConfiguration {
   appSettings: Settings;
@@ -18,7 +18,7 @@ export interface PrintConfiguration {
 export class SudokuPDFMaker {
   pageMode!: PageMode
 
-  static worker = new MyWorker()
+  static worker = new pdfWorker()
 
   constructor(pageMode: PageMode) {
       this.pageMode = pageMode

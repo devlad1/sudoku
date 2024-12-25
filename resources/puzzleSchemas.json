@@ -76,10 +76,10 @@
                     "content": "",
                     "position": {
                         "x": 1,
-                        "y": 1
+                        "y": 0
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -92,8 +92,8 @@
                         "x": 1,
                         "y": 94.84
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -104,10 +104,10 @@
                     "content": "",
                     "position": {
                         "x": 1,
-                        "y": 189
+                        "y": 190
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -118,10 +118,10 @@
                     "content": "",
                     "position": {
                         "x": 124.85,
-                        "y": 1
+                        "y": 0
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -134,8 +134,8 @@
                         "x": 124.85,
                         "y": 94.84
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
@@ -146,10 +146,10 @@
                     "content": "",
                     "position": {
                         "x": 124.85,
-                        "y": 189
+                        "y": 190
                     },
-                    "width": 90,
-                    "height": 90,
+                    "width": 89,
+                    "height": 89,
                     "readOnly": true,
                     "opacity": 1,
                     "required": true
