@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fontSizeOptions: { value: FontSize; text: string }[] = fontSizes.map((n: FontSize) => {
     return { value: n, text: n + '' }
   })
-  registerDropdown(fontSizeOptions, 'fontSizes', 40, (fontSize) => {
+  registerDropdown(fontSizeOptions, 'fontSizes', 44, (fontSize) => {
     config.fontSize = fontSize
     sudokuMaker.drawSamplesToCanvas(config, document.getElementById('samples') as HTMLCanvasElement)
   })
