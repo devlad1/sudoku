@@ -1,6 +1,6 @@
-import { Font } from "@pdfme/common";
 import { Sudoku } from "sudoku-gen/dist/types/sudoku.type";
 import { FontSize } from "./font-sizes";
+import { Font } from "./types";
 
 const PUZZLE_CONST = 3
 
@@ -11,7 +11,7 @@ const TOTAL_SIZE = (PUZZLE_CONST * SQUARE_SIZE + (PUZZLE_CONST - 1) * SMALL_GAP)
 
 const EMPTY_COLOR = "#FFFFFF"
 const USED_COLOR = "#DEDEDE"
-const BORDER_COLOR = "#808080"
+const BORDER_COLOR = "#000000"
 const FONT_COLOR = "#000000"
 
 export function createSudokuPNG(sudoku: Sudoku, font: Font, fontSize: FontSize): string {
@@ -36,6 +36,8 @@ export function drawSamples(canvas: HTMLCanvasElement, font: Font, fontSize: Fon
    for (let i = 0; i < PUZZLE_CONST; i++) {
      for (let j = 0; j < PUZZLE_CONST; j++) {
        drawDigitSquare(1 + i * PUZZLE_CONST + j + '', context, x, 0)
+       context.strokeStyle = BORDER_COLOR
+       context.strokeRect(x, 0, SQUARE_SIZE, SQUARE_SIZE)
        x += (SQUARE_SIZE + SMALL_GAP)
     }
   }
@@ -64,6 +66,7 @@ function drawSudokuToCanvas(canvas: HTMLCanvasElement, sudoku: Sudoku, font: Fon
                       drawDigitSquare(val, context, x, y)
                     }
 
+                    context.strokeStyle = BORDER_COLOR
                     context.strokeRect(x, y, SQUARE_SIZE, SQUARE_SIZE)
                     x += (SQUARE_SIZE + SMALL_GAP)
 
