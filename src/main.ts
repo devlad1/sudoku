@@ -1,6 +1,7 @@
 import { Difficulty } from 'sudoku-gen/dist/types/difficulty.type';
 
-import { PageMode } from './types';
+import { FontSize, fontSizes } from './font-sizes'
+import { Font, PageMode } from './types';
 import { Settings } from './settings';
 import { SudokuPDFMaker } from './sudoku-pdf-maker';
 import { Subject } from 'rxjs';
@@ -11,6 +12,24 @@ const PROGRESS_ELEMENT = document.getElementById("progress-bar") as HTMLDivEleme
 const config = new Settings();
 const sudokuMaker = new SudokuPDFMaker(config.pageMode);
 
+function registerDropdown<T>(options: {value: T, text: string}[], elementId: string, defaultVal: T, configSetter: (val: T) => void) : HTMLSelectElement{
+  const dropdown = document.getElementById(elementId) as HTMLSelectElement;
+  options.forEach(option => {
+    const opt = document.createElement('option');
+    opt.value = option.value + '';
+    opt.textContent = option.text;
+    dropdown.appendChild(opt);
+  });
+
+  configSetter(defaultVal)
+  dropdown.addEventListener('change', () => {
+    configSetter(dropdown.value as T)
+  })
+  dropdown.value = defaultVal as string
+
+  return dropdown;
+}
+
 document.addEventListener("DOMContentLoaded", () => {  
   const difficultyOptions: { value: Difficulty; text: string }[] = [
     { value: 'easy', text: 'Лёгкий' },
@@ -18,38 +37,33 @@ document.addEventListener("DOMContentLoaded", () => {
     { value: 'hard', text: 'Сложный' },
     { value: 'expert', text: 'Эксперт' },
   ];
-  const difficultyDropdown = document.getElementById('difficulty') as HTMLSelectElement;
-  difficultyOptions.forEach(option => {
-    const opt = document.createElement('option');
-    opt.value = option.value;
-    opt.textContent = option.text;
-    difficultyDropdown.appendChild(opt);
-  });
-  difficultyDropdown.addEventListener('change', () => {
-    config.difficulty = difficultyDropdown.value as Difficulty;
-  });
-  difficultyDropdown.value = config.difficulty
-  
+  registerDropdown(difficultyOptions, 'difficulty', 'medium', (difficulty) => {config.difficulty = difficulty});
+
   const numberOptions: { value: PageMode; text: PageMode }[] = [
     { value: '4', text: '4' },
     { value: '6', text: '6' },
   ];
-  const numberOfSudokusDropdown = document.getElementById('numberOfSudokus') as HTMLSelectElement;
-  numberOptions.forEach(option => {
-    const opt = document.createElement('option');
-    opt.value = option.value;
-    opt.textContent = option.text;
-    numberOfSudokusDropdown.appendChild(opt);
-  });
-  numberOfSudokusDropdown.addEventListener('change', () => {
-    config.pageMode = numberOfSudokusDropdown.value as PageMode
-    sudokuMaker.pageMode = config.pageMode
-  });
-  numberOfSudokusDropdown.value = config.pageMode
+  registerDropdown(numberOptions, 'numberOfSudokus', '6', (num) => {config.pageMode = num}) 
+
+  const fontOptions: { value: Font; text: Font }[] = [
+    { value: 'arial', text: 'arial' },
+    { value: 'courier new', text: 'courier new' }
+  ]
+  registerDropdown(fontOptions, 'fonts', 'courier new', (font) => {
+    config.font = font
+    sudokuMaker.drawSamplesToCanvas(config, document.getElementById('samples') as HTMLCanvasElement)
+  }) 
+
+  const fontSizeOptions: { value: FontSize; text: string }[] = fontSizes.map((n: FontSize) => {
+    return { value: n, text: n + '' }
+  })
+  registerDropdown(fontSizeOptions, 'fontSizes', 40, (fontSize) => {
+    config.fontSize = fontSize
+    sudokuMaker.drawSamplesToCanvas(config, document.getElementById('samples') as HTMLCanvasElement)
+  })
 
   function handleInputChange(event: Event): void {
     const target = event.target as HTMLInputElement;
-
     config.numPages = Number(target.value)
   }
   const numPagesInput = document.getElementById('numberOfPages') as HTMLInputElement;
@@ -57,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   numPagesInput.addEventListener('input', handleInputChange);
 
   const button = document.getElementById("generate") as HTMLButtonElement;
-
   if (button) {
     button.addEventListener("click", generatePdf);
   } else {

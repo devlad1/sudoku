@@ -5,7 +5,7 @@ import puzzleSchemas from '../resources/puzzleSchemas.json'
 import { Settings } from "./settings";
 import { PDFDocument } from "pdf-lib";
 import { getSudoku } from "sudoku-gen";
-import { createSudokuPNG } from "./sudoku-drawer";
+import { createSudokuPNG, drawSamples } from "./sudoku-drawer";
 import { Subject } from "rxjs";
 
 import pdfWorker from './pdf-worker/worker?worker'
@@ -24,6 +24,10 @@ export class SudokuPDFMaker {
       this.pageMode = pageMode
   }
 
+  drawSamplesToCanvas(config: Settings, canvas: HTMLCanvasElement) {
+    drawSamples(canvas, config.font, config.fontSize)
+  }
+
   async make(config: Settings, progressSubject$: Subject<number>): Promise<Uint8Array> {
       const pdfDataArray: Uint8Array[] = new Array(config.numPages)
       for (let i = 0; i < config.numPages; i++) {
@@ -36,14 +40,13 @@ export class SudokuPDFMaker {
         template.schemas.forEach((schema) => {
           for (let puzzle of schema) {
               const sudoku = getSudoku(config.difficulty);
-              puzzle.content = createSudokuPNG(sudoku);
+              puzzle.content = createSudokuPNG(sudoku, config.font, config.fontSize);
           }
         })
 
         const waitPromise = new Promise(resolve => {
           SudokuPDFMaker.worker.onmessage = (binaryPdf: MessageEvent<Uint8Array>) => {
             pdfDataArray[i] = binaryPdf.data
-            console.log(`got response ${JSON.stringify(binaryPdf.data)}`)
             resolve("")
           }
         })

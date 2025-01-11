@@ -75,84 +75,90 @@
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 1,
+                        "x": 115,
                         "y": 0
                     },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
                     "opacity": 1,
-                    "required": true
+                    "required": false,
+                    "readOnly": true
                 },
                 {
-                    "name": "puzzle3",
+                    "name": "puzzle1 copy",
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 1,
-                        "y": 94.84
-                    },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
-                    "opacity": 1,
-                    "required": true
-                },
-                {
-                    "name": "puzzle5",
-                    "type": "image",
-                    "content": "",
-                    "position": {
-                        "x": 1,
-                        "y": 190
-                    },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
-                    "opacity": 1,
-                    "required": true
-                },
-                {
-                    "name": "puzzle2",
-                    "type": "image",
-                    "content": "",
-                    "position": {
-                        "x": 124.85,
+                        "x": 10,
                         "y": 0
                     },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
                     "opacity": 1,
-                    "required": true
+                    "required": false,
+                    "readOnly": true
                 },
                 {
-                    "name": "puzzle4",
+                    "name": "puzzle1 copy 2",
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 124.85,
-                        "y": 94.84
+                        "x": 10,
+                        "y": 96
                     },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
                     "opacity": 1,
-                    "required": true
+                    "required": false,
+                    "readOnly": true
                 },
                 {
-                    "name": "puzzle6",
+                    "name": "puzzle1 copy 3",
                     "type": "image",
                     "content": "",
                     "position": {
-                        "x": 124.85,
-                        "y": 190
+                        "x": 10,
+                        "y": 192
                     },
-                    "width": 89,
-                    "height": 89,
-                    "readOnly": true,
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
                     "opacity": 1,
-                    "required": true
+                    "required": false,
+                    "readOnly": true
+                },
+                {
+                    "name": "puzzle1 copy 4",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 115,
+                        "y": 96
+                    },
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
+                    "opacity": 1,
+                    "required": false,
+                    "readOnly": true
+                },
+                {
+                    "name": "puzzle1 copy 5",
+                    "type": "image",
+                    "content": "",
+                    "position": {
+                        "x": 115,
+                        "y": 192
+                    },
+                    "width": 85,
+                    "height": 85,
+                    "rotate": 0,
+                    "opacity": 1,
+                    "required": false,
+                    "readOnly": true
                 }
             ]
         ],
