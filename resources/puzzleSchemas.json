@@ -76,10 +76,10 @@
                     "content": "",
                     "position": {
                         "x": 115,
-                        "y": 0
+                        "y": 1
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
@@ -91,10 +91,10 @@
                     "content": "",
                     "position": {
                         "x": 10,
-                        "y": 0
+                        "y": 1
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
@@ -106,10 +106,10 @@
                     "content": "",
                     "position": {
                         "x": 10,
-                        "y": 96
+                        "y": 96.5
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
@@ -123,8 +123,8 @@
                         "x": 10,
                         "y": 192
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
@@ -136,10 +136,10 @@
                     "content": "",
                     "position": {
                         "x": 115,
-                        "y": 96
+                        "y": 96.5
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
@@ -153,8 +153,8 @@
                         "x": 115,
                         "y": 192
                     },
-                    "width": 85,
-                    "height": 85,
+                    "width": 87,
+                    "height": 87,
                     "rotate": 0,
                     "opacity": 1,
                     "required": false,
